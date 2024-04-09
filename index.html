@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/pagination.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/nav_icons.css" />
+    <link rel="stylesheet" href="./styles/table.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+
+    <link rel="icon" href="./img/favicon.png" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <div class="header-wrapper visually-hidden">
+        <header>
+          <nav>
+            <button class="close-burger">
+              <svg class="close-svg">
+                <use href="./img/sprite.svg#icon-close-x"></use>
+              </svg>
+            </button>
+
+            <div class="logo-wrapper">
+              <svg class="nav__icon">
+                <use href="./img/sprite.svg#icon-setting"></use>
+              </svg>
+              <a href="./index.html" class="nav__logo"
+                >Dashboard <span class="nav__additional">v.01</span>
+              </a>
+            </div>
+
+            <ul class="menu">
+              <li class="menu__item dash">
+                <a href="./index.html">Dashboard</a>
+              </li>
+              <li class="menu__item product">
+                <a href="./index.html">Product</a>
+              </li>
+              <li class="menu__item customer current">
+                <a href="./index.html">Customers</a>
+              </li>
+              <li class="menu__item income">
+                <a href="./index.html">Income</a>
+              </li>
+              <li class="menu__item promote">
+                <a href="./index.html">Promote</a>
+              </li>
+              <li class="menu__item help">
+                <a href="./index.html">Help</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user__wrapper">
+            <img class="user__photo" src="./img/user.png" alt="current user" />
+            <div>
+              <p>Evano</p>
+              <span class="user__additional">Project Manager</span>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- MAIN -->
+      <main>
+        <div class="hero-wrapper">
+          <h1>Hello Evano 👋🏼,</h1>
+          <button class="open-burger">
+            <svg class="burger-svg">
+              <use href="./img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="table-wrapper">
+          <div class="line"></div>
+          <div class="input-wrapper">
+            <svg class="input__search">
+              <use href="./img/sprite.svg#icon-search"></use>
+            </svg>
+            <input class="input" type="text" placeholder="Search" />
+          </div>
+
+          <table class="table">
+            <caption>
+              <p>All Customers</p>
+              <span class="caption__additional">Active Members</span>
+            </caption>
+            <thead class="table__thead">
+              <tr class="table__thead_tr">
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th><span span class="table__status">Status</span></th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__tr">
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><span class="table__status active-status">Active</span></td>
+              </tr>
+              <tr class="table__tr">
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td>
+                  <span class="table__status inactive-status">Inactive</span>
+                </td>
+              </tr>
+              <tr class="table__tr">
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td>
+                  <span class="table__status inactive-status">Inactive</span>
+                </td>
+              </tr>
+              <tr class="table__tr">
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><span class="table__status active-status">Active</span></td>
+              </tr>
+              <tr class="table__tr">
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><span class="table__status active-status">Active</span></td>
+              </tr>
+              <tr class="table__tr">
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><span class="table__status active-status">Active</span></td>
+              </tr>
+              <tr class="table__tr">
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><span class="table__status active-status">Active</span></td>
+              </tr>
+              <tr class="table__tr">
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td>
+                  <span class="table__status inactive-status">Inactive</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pagination-wrapper">
+            <p>Showing data 1 to 8 of 256K entries</p>
+            <ul class="pagination-buttons">
+              <li><button class="page-button">&#60;</button></li>
+              <li><button class="page-button current">1</button></li>
+              <li><button class="page-button">2</button></li>
+              <li><button class="page-button">3</button></li>
+              <li><button class="page-button">4</button></li>
+              <li>...</li>
+              <li><button class="page-button">40</button></li>
+              <li><button class="page-button">&#62;</button></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/burger.js"></script>
+  </body>
+</html>

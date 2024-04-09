@@ -1,0 +1,104 @@
+/* menu */
+.menu__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    height: 46px;
+    padding: 11px 8px 11px 11px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--nav-text);
+    transition: background-color 250ms linear;
+}
+
+.current {
+    background-color: var(--button-active);
+    color: var(--active-text);
+}
+
+.item-svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* icons */
+.menu__item::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    transition: background-image 250ms linear;
+}
+
+/* normal */
+.menu__item.dash::before {
+    background-image: url(../img/key-square.svg);
+}
+
+.menu__item.product::before {
+    background-image: url(../img/3d-square.svg);
+}
+
+.menu__item.customer::before {
+    background-image: url(../img/user-square.svg);
+}
+
+.menu__item.income::before {
+    background-image: url(../img/wallet-money.svg);
+}
+
+.menu__item.promote::before {
+    background-image: url(../img/discount-shape.svg);
+}
+
+.menu__item.help::before {
+    background-image: url(../img/message-question.svg);
+}
+
+.menu__item::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    background-image: url(../img/chevron-right.svg);
+    transition: background-image 250ms linear;
+}
+
+/* hover, focus */
+.menu__item:is(:hover, :focus) {
+    background-color: var(--light-text);
+}
+
+/* current */
+.menu__item.dash.current::before {
+    background-image: url(../img/key-square-current.svg);
+}
+
+.menu__item.product.current::before {
+    background-image: url(../img/3d-square-current.svg);
+}
+
+.menu__item.customer.current::before {
+    background-image: url(../img/user-square-current.svg);
+}
+
+.menu__item.income.current::before {
+    background-image: url(../img/wallet-money-current.svg);
+}
+
+.menu__item.promote.current::before {
+    background-image: url(../img/discount-shape-current.svg);
+}
+
+.menu__item.help.current::before {
+    background-image: url(../img/message-question-current.svg);
+}
+
+.menu__item.current::after {
+    background-image: url(../img/chevron-right-current.svg);
+}

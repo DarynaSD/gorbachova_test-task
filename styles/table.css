@@ -1,0 +1,172 @@
+/* TABLE */
+h1 {
+font-size: 24px;
+font-weight: 500;
+letter-spacing: 0em;
+margin-bottom: 51px;
+}
+
+/* burger button */
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 51px;
+    background: transparent;
+}
+
+.burger-svg {
+    width: 36px;
+    height: 36px;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* placing */
+.table-wrapper {
+    position: relative;
+    background-color: var(--bg-light);
+    width: 100%;
+    border-radius: 30px;
+    padding: 30px 44px 40px 38px;
+    margin-left: auto;
+}
+
+.table {
+    width: 100%;
+}
+
+
+.table__thead_tr {
+    display: none;
+    
+    text-align: left;
+    color: var(--light-text);  
+}
+
+td {
+ border-bottom: 1px solid var(--line-color);
+}
+
+
+
+th {
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+
+td {
+    padding: 24px 0;
+}
+
+.table__body,
+.table__tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.table__body {
+    row-gap: 16px;
+}
+
+.table__tr:nth-child(even)
+{
+    background-color: var(--light-text);
+    margin-left: -38px;
+    padding-left: 38px;
+    margin-right: -44px;
+    padding-right: 44px;
+}
+
+/* input */
+.input-wrapper {
+    position: absolute;
+    top: 114px;
+    left: 38px;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    align-items: center;
+
+    width: 216px;
+    height: 38px;
+    background-color: var(--input-fill);
+    padding: 7px 8px;
+    
+    border-radius: 10px;
+}
+
+.input {
+    border: none;
+    background-color: var(--input-fill);
+    width: 160px;
+}
+
+.input:is(:active, :focus) {
+    border: none;
+    outline: none;
+}
+
+.input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: var(--light-text);
+    left: 40px;
+    
+}
+
+.input__search {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 1;
+}
+
+/* caption styles */
+caption {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+.caption__additional {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--status-active);
+    margin-top: 7px;
+}
+
+/* status */
+.table__status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 29px;
+    border-radius: 4px;
+}
+
+.table__status.active-status {
+    background-color: var(--status-active);
+    border: 1px solid var(--status-active-stroke);
+    color: var(--status-active-text);
+}
+
+.table__status.inactive-status {
+        background-color: var(--status-inactive);
+            border: 1px solid var(--status-inactive-stroke);
+            color: var(--status-inactive-text);
+}

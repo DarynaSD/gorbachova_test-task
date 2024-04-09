@@ -1,0 +1,118 @@
+:root {
+  --bg-main: #fafbff;
+  --bg-light: #ffffff;
+
+  --button-fill: #f5f5f5;
+  --button-stroke: #eeeeee;
+  --button-active: #5932ea;
+
+  --status-active: rgba(22, 192, 152, 0.38);
+  --status-active-stroke: #00b087;
+  --status-active-text: #008767;
+  --status-inactive: #ffc5c5;
+  --status-inactive-stroke: #df0404;
+  --status-inactive-text: #df0404;
+
+  --input-fill: #f9fbff;
+
+  --logo-text: #000000;
+  --main-text: #292d32;
+  --light-text: #b5b7c0;
+  --nav-text: #9197b3;
+  --pagination-text: #404b52;
+  --active-text: #ffffff;
+  --user-text: #757575;
+  --logo-additional: #838383;
+
+  --line-color: #EEEEEE;
+}
+
+body {
+  background-color: var(--bg-main);
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 36px 28px 76px;
+  display: flex;
+  column-gap: 71px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* UNSET */
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+li,
+address,
+a,
+td,
+tr,
+th {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+}
+
+address,
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--main-text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* visually hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  transform: translateX(-320px);
+
+}
